@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms & Input</title>
+</head>
+<body>
+  <form action="process.php">
+<!-- IDs below if it is the same can be written differently and perhaps should be -->
+    <div>
+      <label for="name">Name</label>
+      <input type="text">
+      <!-- So that level box would light up the corresponding input box -->
+      <!-- Default value is rambutan -->
+      <input type="text" name="name" id="name" value="Rambutan">
+    </div>
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter an email">
+    </div>
+    <div>
+      <label for="message">Message</label> <br>
+      <!-- Text Area different from text input cos it takes up more space -->
+      <textarea name="message" id="message" cols="80" rows="10" placeholder="Hello this is a text placeholder Pau is working hard"></textarea>
+    </div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <!-- Default option -->
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <!-- number can increment -->
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <div>
+      <label for="birthdate">Birth Date</label><br>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+      <!-- Assign value to radio buttons. Can only select 1 value -->
+      <!-- Lazy way is write text next to it so don't need a label -->
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" value="simple" id="membership"> Simple
+      <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+      <input type="radio" name="membership" value="super" id="membership"> Super
+    </div>
+    <!-- Checkbox (select multiple options) -->
+    <!-- Checked for default -->
+    <div>
+      <label for="likes">I like...</label>
+      <input type="checkbox" name="likes" value="chocolate" id="likes"> Chocolate
+      <input type="checkbox" name="likes" value="nuts" id="likes" checked> Nuts
+      <input type="checkbox" name="likes" value="cake" id="likes"> Cake
+    </div>
+    <!-- buttons should be placed within the form to apply to the form -->
+    <div>
+      <button type="submit">Submit your response!</button><br>
+      <button type="reset">Reset all filled values</button>
+    </div>
+
+  </form>
+  <div>
+  </div>
+</body>
+</html>
