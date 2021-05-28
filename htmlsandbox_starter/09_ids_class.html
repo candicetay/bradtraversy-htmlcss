@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Div, span, id and class</title>
+  <!-- CSS classes: card & enhance -->
   <style>
     .card {
         border: 1px solid #ccc;
@@ -20,6 +21,30 @@
   </style>
 </head>
 <body>
- 
+  <div id="main-header">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div id="about" class="card">
+  <h3>About</h3>
+  <p>Lorem ipsum dolor sit <span class="enhance"> amet consectetur adipisicing elit. Deserunt repellendus </span>  numquam fuga maxime eius voluptatem ea vero dolore ipsa natus nihil, omnis laudantium eveniet alias autem commodi molestiae repellat delectus?</p>
+  </div>
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Address: haha</li>
+      <li>Phone: 88888</li>
+      <li>Email: blah blah</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <p>Copyright &copy; 2019</p>
+  </div>
 </body>
 </html>
