@@ -6,10 +6,67 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Box Model / Margin & Padding</title>
   <style>
-    
+    /* CSS reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* Content is pushed inwards */
+
+    }
+    .box{
+      background: #f4f4f4;
+      border: 2px #777 solid;
+      width: 500px;
+
+      /* padding on all sides */
+      /* if you do not indicate box-sizing: border-box, the box would be width + padding which is very big */
+      padding: 20px; 
+      /* padding per side */
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      /* What's below will override the top with same name */
+      /* Padding shorthand = top, right, bottom, left */
+      padding: 10px 20px 10px 20px;
+      /* Alternate padding shorthand = top/bottom left/right */
+      padding: 10px 20px;
+
+      /* Margin on all sides */
+      margin: 20px;
+      /* Margin per side */
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      /* What's below will override the top with same name */
+      /* margin shorthand = top, right, bottom, left */
+      margin: 10px 20px 10px 20px;
+      /* Alternate margin shorthand = top/bottom left/right */
+      margin: 10px 20px;
+    }
+
+    /* padding for header */
+    .box h3{
+      padding-bottom: 5px;
+    }
+
+    /* overriding default browser settings */
+    /* .box p {
+      margin: 0;
+    } */
+
   </style>
 </head>
 <body>
-  
+  <div class="box">
+  <h3>Box one</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officiis voluptatibus mollitia aut ducimus beatae itaque inventore quaerat saepe minima.</p>
+  </div>
+  <div class="box">
+  <h3>Box Two</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officiis voluptatibus mollitia aut ducimus beatae itaque inventore quaerat saepe minima.</p>
+  </div>
 </body>
 </html>

@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Float & Align</title>
-  <style>
-    
-  </style>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float & Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        /* width: 1500px; */
+        /* This is a good default for responsive design */
+        max-width: 1500px;
+        margin: 30px auto;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .box p {
+        /* for text align properties */
+        text-align: center;
+      }
+
+      #box2 p {
+        text-align: justify;
+      }
+
+      #box2 {
+        float: right;
+        width: 40%;
+      }
+
+      #box3 {
+        float: left;
+        width: 58%;
+      }
+
+      /* Clears right and left float */
+      .clr {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          quidem magni odio expedita, cum numquam recusandae quasi illo voluptas
+          eos.
+        </p>
+      </div>
+
+      <div id="box2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          quidem magni odio expedita, cum numquam recusandae quasi illo voluptas
+          eos.
+        </p>
+      </div>
+
+      <div id="box3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          quidem magni odio expedita, cum numquam recusandae quasi illo voluptas
+          eos.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          quidem magni odio expedita, cum numquam recusandae quasi illo voluptas
+          eos.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
